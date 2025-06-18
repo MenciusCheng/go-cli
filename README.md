@@ -92,3 +92,12 @@ go-cli ask "你是谁" --deepseekApiKey "sk-xx"
 添加新命令到项目中
 
 语法：`go-cli add [name]`
+
+## 构建步骤
+
+比如构建版本 `v1.0.0`
+
+1. 确保代码已提交
+2. 创建标签 `git tag -a v1.0.0 -m "发布版本 v1.0.0"`
+3. 推送标签 `git push origin v1.0.0`
+4. 使用 Makefile 构建 `make all`
