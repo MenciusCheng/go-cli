@@ -12,7 +12,7 @@ go mod tidy
 go install
 ```
 
-### 方式2：下载已打包命令工具
+### 方式2：[下载已发布版本](https://github.com/MenciusCheng/go-cli/releases)
 
 ### 测试安装结果
 
