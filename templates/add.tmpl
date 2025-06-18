@@ -1,0 +1,23 @@
+{{- $vName := (.name | camel) -}}
+package cmd
+
+import (
+	"github.com/spf13/cobra"
+)
+
+var {{$vName}}Cmd = &cobra.Command{
+	Use:   "{{.name}}",
+	Short: "",
+	Long:  ``,
+	RunE: func(cmd *cobra.Command, args []string) error {
+		return {{$vName}}Handler()
+	},
+}
+
+func init() {
+	rootCmd.AddCommand({{$vName}}Cmd)
+}
+
+func {{$vName}}Handler() error {
+	return nil
+}
